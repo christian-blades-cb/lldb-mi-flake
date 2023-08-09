@@ -1,0 +1,11 @@
+* lldb-mi flake
+
+Flake for [[https://github.com/lldb-tools/lldb-mi][lldb-mi]]
+
+** Use-case
+
+My use-case is [[https://emacs-lsp.github.io/dap-mode/][dap-mode]] with llvm.
+
+** Notes
+
+Hard-coded to llvm 15.x, because this is the current version that Rust is using. I'm uncertain if this is correct or good, but llvm-mi will not compile with the default llvm version set in nixpkgs today.
